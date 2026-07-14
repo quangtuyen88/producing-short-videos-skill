@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" role="img" aria-label="Bolt — coral cat host">
+  <!-- Transparent bust, circular-crop friendly; original Bolt mascot (not VOICEVOX) -->
+  <g transform="translate(128 138)">
+    <!-- body -->
+    <ellipse cx="0" cy="78" rx="62" ry="48" fill="#FF7A4D" stroke="#2A1810" stroke-width="6"/>
+    <ellipse cx="0" cy="86" rx="38" ry="28" fill="#FFF3E8"/>
+
+    <!-- open notebook (held at chest) -->
+    <g transform="translate(0 72)">
+      <rect x="-28" y="-2" width="26" height="22" rx="2" fill="#FFE29A" stroke="#2A1810" stroke-width="3.5"/>
+      <rect x="2" y="-2" width="26" height="22" rx="2" fill="#FFE29A" stroke="#2A1810" stroke-width="3.5"/>
+      <path d="M-22 6 H-8 M-22 12 H-6" stroke="#C9A24A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M8 6 H22 M8 12 H20" stroke="#C9A24A" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- head -->
+    <circle cx="0" cy="0" r="72" fill="#FF8A5C" stroke="#2A1810" stroke-width="6"/>
+
+    <!-- ears (rounded cat) -->
+    <path d="M-58 -40 Q-72 -96 -28 -66 Q-48 -52 -58 -40 Z" fill="#FF8A5C" stroke="#2A1810" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M-56 -48 Q-64 -80 -38 -64 Q-50 -54 -56 -48 Z" fill="#FFB199"/>
+    <path d="M58 -40 Q72 -96 28 -66 Q48 -52 58 -40 Z" fill="#FF8A5C" stroke="#2A1810" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M56 -48 Q64 -80 38 -64 Q50 -54 56 -48 Z" fill="#FFB199"/>
+
+    <!-- muzzle -->
+    <ellipse cx="0" cy="22" rx="34" ry="26" fill="#FFF3E8"/>
+
+    <!-- freckles -->
+    <circle cx="-46" cy="14" r="2.2" fill="#E86A3F"/>
+    <circle cx="-38" cy="20" r="1.8" fill="#E86A3F"/>
+    <circle cx="-50" cy="22" r="1.6" fill="#E86A3F"/>
+    <circle cx="46" cy="14" r="2.2" fill="#E86A3F"/>
+    <circle cx="38" cy="20" r="1.8" fill="#E86A3F"/>
+    <circle cx="50" cy="22" r="1.6" fill="#E86A3F"/>
+
+    <!-- eyes -->
+    <ellipse cx="-24" cy="-6" rx="16" ry="18" fill="#2A1810"/>
+    <ellipse cx="24" cy="-6" rx="16" ry="18" fill="#2A1810"/>
+    <ellipse cx="-24" cy="-4" rx="9" ry="10" fill="#C96A20"/>
+    <ellipse cx="24" cy="-4" rx="9" ry="10" fill="#C96A20"/>
+    <circle cx="-28" cy="-10" r="4.5" fill="#FFFFFF"/>
+    <circle cx="20" cy="-10" r="4.5" fill="#FFFFFF"/>
+    <circle cx="-20" cy="0" r="2" fill="#FFFFFF" opacity="0.85"/>
+    <circle cx="28" cy="0" r="2" fill="#FFFFFF" opacity="0.85"/>
+
+    <!-- soft brows -->
+    <path d="M-38 -26 Q-24 -32 -12 -26" stroke="#2A1810" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M12 -26 Q24 -32 38 -26" stroke="#2A1810" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- nose + smile -->
+    <ellipse cx="0" cy="12" rx="7" ry="5.5" fill="#2A1810"/>
+    <path d="M0 17 Q-10 28 -16 24" stroke="#2A1810" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M0 17 Q10 28 16 24" stroke="#2A1810" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-12 30 Q0 38 12 30" stroke="#2A1810" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- blush -->
+    <ellipse cx="-48" cy="16" rx="11" ry="7" fill="#FFB199" opacity="0.7"/>
+    <ellipse cx="48" cy="16" rx="11" ry="7" fill="#FFB199" opacity="0.7"/>
+
+    <!-- notepad + pen on head (right) -->
+    <g transform="translate(48 -58) rotate(18)">
+      <rect x="-10" y="-4" width="28" height="22" rx="2" fill="#FFE29A" stroke="#2A1810" stroke-width="3"/>
+      <path d="M-4 4 H12 M-4 10 H10" stroke="#C9A24A" stroke-width="2" stroke-linecap="round"/>
+      <!-- pen -->
+      <rect x="14" y="-12" width="6" height="28" rx="2" fill="#6B5CFF" stroke="#2A1810" stroke-width="2.5"/>
+      <path d="M14 -12 H20 L17 -20 Z" fill="#FF5A7A" stroke="#2A1810" stroke-width="2"/>
+      <rect x="14" y="12" width="6" height="6" fill="#FFD24A" stroke="#2A1810" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
