@@ -13,6 +13,7 @@ Compatible with **Claude Code**, **Codex CLI**, **Kiro CLI**, and **Copilot CLI*
 | [`product-launch-video`](product-launch-video/) | Product launch / promo videos from a product URL, pasted script, or brief — SaaS promos, feature reveals, app and company launches (HyperFrames pipeline). Includes the VOICEVOX dialogue-explainer (Zundamon-style) mode. |
 | [`product-demo-video`](product-demo-video/) | Kinetic product demos — fast cuts, whip pans, real-UI crops. Mode B (dialogue) reuses the sibling's dialogue-explainer contract. |
 | [`poem-explainer-video`](poem-explainer-video/) | Cinematic poem/verse explainers in a vintage archival-scrapbook style — period artwork, line-by-line TTS narration, word-by-word karaoke captions (Remotion stack). |
+| [`vox-papercut-omni`](vox-papercut-omni/) | Vox-style paper-cutout collage explainers on Google Flow (Omni): each beat a generated collage poster brought alive as a "living poster" by Omni image-to-video — gflow-cli bridge or manual Flow prompt pack, ffmpeg assembly, no Remotion. |
 
 ## Install
 
@@ -48,6 +49,7 @@ Or clone and symlink a skill directory into `<agent-home>/skills/<skill-name>/` 
 
 ## Dependencies
 
-- **Sibling skills at install time:** `product-demo-video` Mode B reads `../product-launch-video/` (dialogue-explainer reference + `voicevox-tts.mjs`) — install both when using dialogue mode. The skills otherwise stand alone.
+- **Sibling skills at install time:** `product-demo-video` Mode B reads `../product-launch-video/` (dialogue-explainer reference + `voicevox-tts.mjs`) — install both when using dialogue mode. `vox-papercut-omni` adopts `poem-explainer-video`'s karaoke caption spec when captions are on. The skills otherwise stand alone.
+- **Google Flow:** `vox-papercut-omni` generates motion on Google Flow (Omni) — through the pinned `ffroliva/gflow-cli/skills/gflow-cli#v0.42.0` bridge when installed, else a manual prompt pack the user drives in the Flow UI. Posters need `OPENAI_API_KEY` (gpt-image-1 via media-use).
 - **Runtime siblings (not shipped here):** the `hyperframes-*` / `media-use` skill family is installed by `npx hyperframes init`; each SKILL.md gates on its presence (beside the skill, then `~/.agents/skills/`) and prints the install hint when missing.
 - **History:** these skills previously lived in [`quangtuyen88/dev-skill`](https://github.com/quangtuyen88/dev-skill) under `slide/`; the deck-authoring pipeline (`marp-slide-author`, `slide-layout-fix`, `slide-style-rector`, `remotion-slide-video`) remains there.
