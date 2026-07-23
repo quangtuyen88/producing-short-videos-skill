@@ -142,7 +142,7 @@ State the safe zone in the prompt ("all elements and the headline composed well 
 
 ### 7.2 The generation contract
 
-Per shot, regardless of path: **in** = cropped poster (start frame) + motion prompt + model tier (`omni` finals / `omni-flash` previz) + aspect + shortest available clip length ≥ shot duration; **out** = one mp4 saved as `takes/s{beat}{shot}-t{n}.mp4` (e.g. `takes/s3a-t2.mp4`). Accepted take id recorded in the SSOT.
+Per shot, regardless of path: **in** = cropped poster (start frame) + motion prompt + model tier (previz on the account's cheapest tier, finals on its best — confirm the actual lineup at session start, `references/flow-omni-ops.md` §1/§6) + aspect + shortest available clip length ≥ shot duration; **out** = one mp4 saved as `takes/s{beat}{shot}-t{n}.mp4` (e.g. `takes/s3a-t2.mp4`). Accepted take id recorded in the SSOT.
 
 ### 7.3 Motion prompts
 
@@ -150,9 +150,9 @@ Five axes — GOAL (flat 2D collage motion graphic) · CAMERA (one smooth contin
 
 ### 7.4 Spend discipline (three checkpoints)
 
-1. **Style-proof gate**: generate the hook beat only — 1 poster + 1 **Omni Flash** previz — and show the user before any batch spend. This validates papercut fidelity *and* motion in one cheap clip.
-2. **Previz batch**: all shots on Omni Flash; QC each take (§7.6); fix prompts via the symptom table. A shot passes previz or its prompt/poster is revised — nothing goes to finals unproven.
-3. **Finals batch**: proven prompts on **Omni**. Estimate first: `shots × (1 + 0.3 re-roll) × credits/clip` against the brief's budget; on overrun, ask before proceeding.
+1. **Style-proof gate**: generate the hook beat only — 1 poster + 1 cheap-tier previz — and show the user before any batch spend. This validates papercut fidelity *and* motion in one cheap clip.
+2. **Previz batch**: all shots on the cheap tier; QC each take (§7.6); fix prompts via the symptom table. A shot passes previz or its prompt/poster is revised — nothing goes to finals unproven.
+3. **Finals batch**: proven prompts on the finals tier. Estimate first: `shots × (1 + 0.3 re-roll) × credits/clip` against the brief's budget; on overrun, ask before proceeding.
 
 ### 7.5 Content constraints
 
@@ -227,6 +227,6 @@ Project layout: `STORYBOARD.md` · `posters/` (`s1a.png` + `s1a-crop.png`) · `t
 - [ ] Real-people/logo beats resolved per §7.5 before generation, not after a refusal
 - [ ] All poster/take prompts + assets frozen (media ledger for images; takes/ committed to the project dir)
 - [ ] Beat durations = measured VO (+finale hold only); shots 3–6 s (hook ≤3 s); cuts every 4–6 s; no hand-tuned totals
-- [ ] Credits: previz ran on Omni Flash, finals on Omni, spend within the brief's budget (asked on overrun)
+- [ ] Credits: previz ran on the cheap tier, finals on the finals tier (actual lineup confirmed at session start), spend within the brief's budget (asked on overrun)
 - [ ] BGM 16–20 dB under voice with fades; captions (if on) pass the sibling spec's word-timestamp gate
 - [ ] Facts and clippings pass §10; delivery keeps the audio track; `ffprobe` frame count matches the SSOT total
