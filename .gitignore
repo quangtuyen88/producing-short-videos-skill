@@ -8,3 +8,16 @@ node_modules/
 # Local run evidence and rendered outputs
 /reports/
 /videos/
+
+
+# APM dependencies
+apm_modules/
+
+# Local production working dirs and third-party skills (not part of the published library)
+/diataxis-vox-collage/
+/listen-transcripts/
+/opus5-intro-short/
+/pho-parchment-diorama/
+/thanh-giong-paper-cutout/
+/marunage-short/
+/productions/
