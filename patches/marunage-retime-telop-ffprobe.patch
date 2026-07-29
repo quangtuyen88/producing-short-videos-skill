@@ -1,0 +1,18 @@
+marunage-short is a third-party untracked skill vendored into this repo.
+Upstream hardcodes the Apple-Silicon homebrew ffprobe path and breaks on this
+x86-homebrew Mac at the DP-resnap step. This patch makes it resolve ffprobe
+via PATH first, falling back to the hardcoded path.
+Usage: from repo root, after any re-extract of the skill zip, run
+  patch -p1 < patches/marunage-retime-telop-ffprobe.patch
+node doctor.mjs detects when this patch is missing.
+--- a/marunage-short/engine/smart-caption/scripts/retime_telop.py
++++ b/marunage-short/engine/smart-caption/scripts/retime_telop.py
+@@ -96,7 +96,7 @@
+
+ def media_duration(media_path: Path) -> float:
+     r = subprocess.run(
+-        ["/opt/homebrew/bin/ffprobe", "-v", "error",
++        [__import__("shutil").which("ffprobe") or "/opt/homebrew/bin/ffprobe", "-v", "error",
+          "-show_entries", "format=duration",
+          "-of", "default=noprint_wrappers=1:nokey=1", str(media_path)],
+         capture_output=True, text=True)
